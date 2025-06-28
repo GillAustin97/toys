@@ -43,6 +43,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 5,
         marginTop: 20,
+        borderColor: 'black',
+        borderWidth: 2,
     },
     title:{
         fontSize: 40,
@@ -57,5 +59,7 @@ const styles = StyleSheet.create({
         height: 200,
         marginBottom: 20,
         borderRadius: 25,
+        borderColor: 'black',
+        borderWidth: 2,
     },
 })

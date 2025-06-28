@@ -4,6 +4,9 @@ import { StyleSheet, Text, View, Linking, Pressable, Image} from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
+//scrolling view for screen
+import { ScrollView } from 'react-native';
+
 //image imports
 import funkoLogo from '../assets/storeLogos/logo_funko.png';
 import targetLogo from '../assets/storeLogos/logo_target.png';
@@ -36,45 +39,48 @@ const stores = () => {
 
 
   return (
+
+    <ScrollView>
     <View style={styles.container}>
 
-      <Image source={funkoLogo} style={styles.mainScreenLogo} />
+      <Image source={funkoLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={funkoSite}>
         <Text style={styles.buttonText}>Funko</Text>
       </Pressable>
 
-      <Image source={targetLogo} style={styles.mainScreenLogo} />
+      <Image source={targetLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={targetSite}>
         <Text style={styles.buttonText}>Target</Text>
       </Pressable>
 
-      <Image source={walmartLogo} style={styles.mainScreenLogo} />
+      <Image source={walmartLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={walmartSite}>
         <Text style={styles.buttonText}>Walmart</Text>
       </Pressable>
 
-      <Image source={mercariLogo} style={styles.mainScreenLogo} />
+      <Image source={mercariLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={mercariSite}>
         <Text style={styles.buttonText}>Mercari</Text>
       </Pressable>
 
-      <Image source={legoLogo} style={styles.mainScreenLogo} />
+      <Image source={legoLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={legoSite}>
         <Text style={styles.buttonText}>Lego</Text>
       </Pressable>
 
-      <Image source={ebayLogo} style={styles.mainScreenLogo} />
+      <Image source={ebayLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={ebaySite}>
         <Text style={styles.buttonText}>Ebay</Text>
       </Pressable>
 
     </View>
+    </ScrollView>
   )
 }
 
@@ -108,9 +114,13 @@ const styles = StyleSheet.create({
         textShadowRadius: 2,
     },
     logo:{
-        width: 200,
-        height: 200,
+        width: 100,
+        height: 100,
         marginBottom: 20,
         borderRadius: 25,
+        marginTop: 5,
+        marginBottom: 2,
+        borderColor: 'black',
+        borderWidth: 2,
     },
 })
