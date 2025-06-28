@@ -18,11 +18,11 @@ const index = () => {
         <Text style={styles.title}>RareToys</Text>
 
         {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
-        <Link href="/login"   style={styles.mainScreenButton}>Login</Link>
-        <Link href="/toys"    style={styles.mainScreenButton}>Toys</Link>
-        <Link href="/stores"  style={styles.mainScreenButton}>Stores</Link>
-        <Link href="/camera"  style={styles.mainScreenButton}>Camera</Link>
-        <Link href="/feedback"style={styles.mainScreenButton}>Feedback</Link>
+        <Link href="/login"   style={styles.button}>Login</Link>
+        <Link href="/toys"    style={styles.button}>Toys</Link>
+        <Link href="/stores"  style={styles.button}>Stores</Link>
+        <Link href="/camera"  style={styles.button}>Camera</Link>
+        <Link href="/feedback"style={styles.button}>Feedback</Link>
 
     </View>
   )
@@ -31,14 +31,13 @@ const index = () => {
 export default index
 
 const styles = StyleSheet.create({
-    
     container:{
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor:'#ffff',
     },
-    mainScreenButton:{
+    button:{
         backgroundColor: '#3A5F0B',
         paddingVertical: 10,
         paddingHorizontal: 20,
