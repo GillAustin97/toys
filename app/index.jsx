@@ -7,14 +7,16 @@ import {Link} from 'expo-router'
 const index = () => {
   return (
     <View>
-      <Text>index</Text>
 
-      <Link href="/login">login</Link>
-      <Link href="/stores">login</Link>
-      <Link href="/feedback">login</Link>
-      <Link href="/camera">login</Link>
-      <Link href="/toys">login</Link>
 
+
+    {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
+      <Link href="/login">Login</Link>
+      <Link href="/toys">Toys</Link>
+      <Link href="/stores">Stores</Link>
+      <Link href="/camera">Camera</Link>
+      <Link href="/feedback">Feedback</Link>
+      
 
     </View>
   )
@@ -22,4 +24,16 @@ const index = () => {
 
 export default index
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+    container:{
+        flex: 1,
+    },
+    mainScreenButton:{
+        backgroundColor: '#3A5F0B',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+        marginTop: 20
+    },
+})
