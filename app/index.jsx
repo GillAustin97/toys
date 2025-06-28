@@ -1,22 +1,28 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image} from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
+
+//importing main logo image for the main screen
+import mainLogo from '../assets/logo_toy.png'
 
 const index = () => {
   return (
     <View style={styles.container}>
 
+        {/*Main Screen logo */}
+        <Image source={mainLogo} style={styles.mainScreenLogo} />
+
+        {/*Main Screen title */}
         <Text style={styles.title}>RareToys</Text>
 
-
-    {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
-      <Link href="/login"   style={styles.mainScreenButton}>Login</Link>
-      <Link href="/toys"    style={styles.mainScreenButton}>Toys</Link>
-      <Link href="/stores"  style={styles.mainScreenButton}>Stores</Link>
-      <Link href="/camera"  style={styles.mainScreenButton}>Camera</Link>
-      <Link href="/feedback"style={styles.mainScreenButton}>Feedback</Link>
+        {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
+        <Link href="/login"   style={styles.mainScreenButton}>Login</Link>
+        <Link href="/toys"    style={styles.mainScreenButton}>Toys</Link>
+        <Link href="/stores"  style={styles.mainScreenButton}>Stores</Link>
+        <Link href="/camera"  style={styles.mainScreenButton}>Camera</Link>
+        <Link href="/feedback"style={styles.mainScreenButton}>Feedback</Link>
 
     </View>
   )
@@ -46,5 +52,11 @@ const styles = StyleSheet.create({
         textShadowColor: '#000',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
-    }
+    },
+    mainScreenLogo:{
+        width: 200,
+        height: 200,
+        marginBottom: 20,
+        borderRadius: 25,
+    },
 })
