@@ -1,5 +1,8 @@
+//this is the main point of the application where you add all components to this page
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+
+//link for to attach to different screens
+import {Link} from 'expo-router'
 
 const stores = () => {
   return (
