@@ -28,25 +28,32 @@ const stores = () => {
 
 
   return (
-    <View>
+    <View style={styles.container}>
+
       <Pressable style={styles.button} onPress={funkoSite}>
         <Text style={styles.buttonText}>Funko</Text>
       </Pressable>
+
       <Pressable style={styles.button} onPress={targetSite}>
         <Text style={styles.buttonText}>Target</Text>
       </Pressable>
+
       <Pressable style={styles.button} onPress={walmartSite}>
         <Text style={styles.buttonText}>Walmart</Text>
       </Pressable>
+
       <Pressable style={styles.button} onPress={mercariSite}>
-        <Text style={styles.buttonText}>Meracri</Text>
+        <Text style={styles.buttonText}>Mercari</Text>
       </Pressable>
+
       <Pressable style={styles.button} onPress={legoSite}>
         <Text style={styles.buttonText}>Lego</Text>
       </Pressable>
+
       <Pressable style={styles.button} onPress={ebaySite}>
         <Text style={styles.buttonText}>Ebay</Text>
       </Pressable>
+
     </View>
   )
 }
@@ -55,6 +62,7 @@ export default stores
 
 const styles = StyleSheet.create({
     container:{
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor:'#ffff',
@@ -65,6 +73,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 5,
         marginTop: 20,
+        flexWrap: 'wrap',
     },
     buttonText:{
       color: 'white',
@@ -77,11 +86,5 @@ const styles = StyleSheet.create({
         textShadowColor: '#000',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
-    },
-    mainScreenLogo:{
-        width: 200,
-        height: 200,
-        marginBottom: 20,
-        borderRadius: 25,
     },
 })
