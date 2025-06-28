@@ -4,7 +4,14 @@ import { StyleSheet, Text, View, Linking, Pressable, Image} from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
+//image imports
 import funkoLogo from '../assets/storeLogos/logo_funko.png';
+import targetLogo from '../assets/storeLogos/logo_target.png';
+import walmartLogo from '../assets/storeLogos/logo_walmart.png';
+import mercariLogo from '../assets/storeLogos/logo_mercari.png';
+import legoLogo from '../assets/storeLogos/logo_lego.png';
+import ebayLogo from '../assets/storeLogos/logo_ebay.png';
+
 
 const stores = () => {
 
@@ -37,21 +44,31 @@ const stores = () => {
         <Text style={styles.buttonText}>Funko</Text>
       </Pressable>
 
+      <Image source={targetLogo} style={styles.mainScreenLogo} />
+
       <Pressable style={styles.button} onPress={targetSite}>
         <Text style={styles.buttonText}>Target</Text>
       </Pressable>
+
+      <Image source={walmartLogo} style={styles.mainScreenLogo} />
 
       <Pressable style={styles.button} onPress={walmartSite}>
         <Text style={styles.buttonText}>Walmart</Text>
       </Pressable>
 
+      <Image source={mercariLogo} style={styles.mainScreenLogo} />
+
       <Pressable style={styles.button} onPress={mercariSite}>
         <Text style={styles.buttonText}>Mercari</Text>
       </Pressable>
 
+      <Image source={legoLogo} style={styles.mainScreenLogo} />
+
       <Pressable style={styles.button} onPress={legoSite}>
         <Text style={styles.buttonText}>Lego</Text>
       </Pressable>
+
+      <Image source={ebayLogo} style={styles.mainScreenLogo} />
 
       <Pressable style={styles.button} onPress={ebaySite}>
         <Text style={styles.buttonText}>Ebay</Text>
