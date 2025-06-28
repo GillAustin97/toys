@@ -1,12 +1,13 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View, Linking, Pressable } from 'react-native'
+import { StyleSheet, Text, View, Linking, Pressable, Image} from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
+import funkoLogo from '../assets/storeLogos/logo_funko.png';
+
 const stores = () => {
 
-  {/*Links for websites for the buttons */}
   const funkoSite = () => {
     Linking.openURL('https://www.funko.com')
   };
@@ -29,6 +30,8 @@ const stores = () => {
 
   return (
     <View style={styles.container}>
+
+      <Image source={funkoLogo} style={styles.mainScreenLogo} />
 
       <Pressable style={styles.button} onPress={funkoSite}>
         <Text style={styles.buttonText}>Funko</Text>
@@ -86,5 +89,11 @@ const styles = StyleSheet.create({
         textShadowColor: '#000',
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
+    },
+    logo:{
+        width: 200,
+        height: 200,
+        marginBottom: 20,
+        borderRadius: 25,
     },
 })

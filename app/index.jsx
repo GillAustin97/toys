@@ -12,7 +12,7 @@ const index = () => {
     <View style={styles.container}>
 
         {/*Main Screen logo */}
-        <Image source={mainLogo} style={styles.mainScreenLogo} />
+        <Image source={mainLogo} style={styles.logo} />
 
         {/*Main Screen title */}
         <Text style={styles.title}>RareToys</Text>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         textShadowOffset: { width: 1, height: 1 },
         textShadowRadius: 2,
     },
-    mainScreenLogo:{
+    logo:{
         width: 200,
         height: 200,
         marginBottom: 20,
