@@ -8,6 +8,14 @@ const index = () => {
   return (
     <View>
       <Text>index</Text>
+
+      <Link href="/login">login</Link>
+      <Link href="/stores">login</Link>
+      <Link href="/feedback">login</Link>
+      <Link href="/camera">login</Link>
+      <Link href="/toys">login</Link>
+
+
     </View>
   )
 }
