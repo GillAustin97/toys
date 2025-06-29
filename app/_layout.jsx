@@ -10,7 +10,7 @@ const _layout = () => {
 
     }}>
 
-      <Stack.Screen name="index" options={{title: 'Home'}} />
+      <Stack.Screen name="index" options={{title: 'Home', headerShown: false}} />
       <Stack.Screen name="login" options={{title: 'Login'}} />
       <Stack.Screen name="stores" options={{title: 'Stores'}} />
       <Stack.Screen name="toys" options={{title: 'Toys'}} />
