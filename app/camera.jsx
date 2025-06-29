@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderColor: 'black',
     borderWidth: 2,
+    marginBottom: 20,
     },
     buttonContainer: {
     flex: 1,
