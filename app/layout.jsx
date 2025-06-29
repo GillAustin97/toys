@@ -1,11 +1,11 @@
-//this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View} from 'react-native'
-
-import { Stack } from 'expo-router'
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
 const layout = () => {
   return (
-
+    <View>
+      <Text>layout</Text>
+    </View>
   )
 }
 
