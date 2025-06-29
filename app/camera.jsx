@@ -1,49 +1,66 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Button } from 'react-native'
 
-//link for to attach to different screens
-import {Link} from 'expo-router'
+import React, {useState} from 'react'
 
-const camera = () => {
-  return (
+//importing camera permissions
+import { CameraView, useCameraPermissions } from 'expo-camera'
+
+
+export default function cameraScreen() {
+
+  const [facing, setFacing] = useState('back');
+  const [permission, requestPermission] = useCameraPermissions();
+
+  function cameraFacing() {
+    setFacing(current => (current === 'back' ? 'front' : 'back'));
+  }
+  return(
     <View style={styles.container}>
-      <Text>camera</Text>
+      <CameraView style={styles.camera} facing={facing}>
+        <View style={styles.buttonContainer}>
+
+          <TouchableOpacity style={styles.button} onPress={cameraFacing}>
+            <Text style={styles.text}>Switch</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button} onPress={cameraFacing}>
+            <Text style={styles.text}>Take Photo</Text>
+          </TouchableOpacity>
+
+
+        </View>
+      </CameraView>
     </View>
-  )
+  );
 }
 
-export default camera
-
 const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor:'#ffff',
+  container:{
+    flex: 1,
+    justifyContent: 'center',
+  },
+  button:{
+    backgroundColor: '#3A5F0B',
+    alignSelf: 'flex-end',
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+    borderColor: 'black',
+    borderWidth: 2,
     },
-    button:{
-        backgroundColor: '#3A5F0B',
-        paddingVertical: 10,
-        paddingHorizontal: 20,
-        borderRadius: 5,
-        marginTop: 20,
-        borderColor: 'black',
-        borderWidth: 2,
+    buttonContainer: {
+    flex: 1,
+    margin: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     },
-    title:{
-        fontSize: 40,
-        fontWeight: 'bold',
-        color: 'Black',
-        textShadowColor: '#000',
-        textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 2,
+    text:{
+      fontSize: 15,
+      fontWeight: 'bold',
+      color: 'black'
     },
-    logo:{
-        width: 200,
-        height: 200,
-        marginBottom: 20,
-        borderRadius: 25,
-        borderColor: 'black',
-        borderWidth: 2,
+    camera:{
+      flex: 1
     },
 })
