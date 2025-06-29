@@ -1,13 +1,24 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
+//importing store review for feedback
+import * as StoreReview from 'expo-store-review';
+
 const feedback = () => {
+  const storeRate = async () => {
+    if (await StoreReview.hasAction()) {
+      await StoreReview.requestReview()
+}
+  }
   return (
     <View style={styles.container}>
-      <Text>feedback</Text>
+      <Text>Love the app? Leave a Review</Text>
+      <TouchableOpacity style={styles.button} onPress={storeRate}>
+        <Text style={styles.Text}>Rate us</Text>
+      </TouchableOpacity>
     </View>
   )
 }
