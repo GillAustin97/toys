@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import { Stack } from 'expo-router'
 
-const layout = () => {
+const _layout = () => {
 
   return (
     <Stack screenOptions={{
@@ -21,6 +21,6 @@ const layout = () => {
   )
 }
 
-export default layout
+export default _layout
 
 const styles = StyleSheet.create({})
