@@ -3,10 +3,12 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import { Stack } from 'expo-router'
 
+
 const _layout = () => {
 
   return (
-    <Stack screenOptions={{
+    <Stack screenOptions={{headerStyle:{backgroundColor: '#8C9867'},
+    headerTintColor: '#000',
 
     }}>
 

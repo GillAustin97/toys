@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
         fontSize: 40,
         fontWeight: 'bold',
         color: 'Black',
-        textShadowColor: '#000',
     },
     logo:{
         width: 200,
