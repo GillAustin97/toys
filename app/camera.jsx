@@ -28,7 +28,6 @@ export default function cameraScreen() {
             <Text style={styles.text}>Take Photo</Text>
           </TouchableOpacity>
 
-
         </View>
       </CameraView>
     </View>
