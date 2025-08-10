@@ -4,26 +4,15 @@ import { StyleSheet, Text, View } from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
-//links for setting pages
-import generalSettings from './accountSettings'
-
-const settings = () => {
+const likeSettings = () => {
   return (
-     <View style={styles.container}>
-
-      <Link href="/aboutSettings"style={styles.button}>About</Link>
-      <Link href="/accountSettings"style={styles.button}>Account</Link>
-      <Link href="/buyingSettings"style={styles.button}>Buying</Link>
-      <Link href="/sellingSettings"style={styles.button}>Selling</Link>
-      <Link href="/notificationsSettings"style={styles.button}>Notifications</Link>
-      <Link href="/savedSettings"style={styles.button}>Preferences</Link>
-      <Link href="/likeSettings"style={styles.button}>Support</Link>
-
+    <View style={styles.container}>
+      <Text>toys</Text>
     </View>
   )
 }
 
-export default settings
+export default likeSettings
 
 const styles = StyleSheet.create({
     container:{
