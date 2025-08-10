@@ -7,7 +7,7 @@ import {Link} from 'expo-router'
 const aboutSettings = () => {
   return (
     <View style={styles.container}>
-      <Text>toys</Text>
+      <Text></Text>
     </View>
   )
 }

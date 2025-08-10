@@ -16,8 +16,8 @@ const settings = () => {
       <Link href="/buyingSettings"style={styles.button}>Buying</Link>
       <Link href="/sellingSettings"style={styles.button}>Selling</Link>
       <Link href="/notificationsSettings"style={styles.button}>Notifications</Link>
-      <Link href="/savedSettings"style={styles.button}>Preferences</Link>
-      <Link href="/likeSettings"style={styles.button}>Support</Link>
+      <Link href="/preferencesSettings"style={styles.button}>Preferences</Link>
+      <Link href="/supportSettings"style={styles.button}>Support</Link>
 
     </View>
   )

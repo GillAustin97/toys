@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
-const likeSettings = () => {
+const preferencesSettings = () => {
   return (
     <View style={styles.container}>
       <Text>toys</Text>
@@ -12,7 +12,7 @@ const likeSettings = () => {
   )
 }
 
-export default likeSettings
+export default preferencesSettings
 
 const styles = StyleSheet.create({
     container:{

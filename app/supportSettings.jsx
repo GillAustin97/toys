@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
-const savedSettings = () => {
+const supportSettings = () => {
   return (
     <View style={styles.container}>
       <Text>toys</Text>
@@ -12,7 +12,7 @@ const savedSettings = () => {
   )
 }
 
-export default savedSettings
+export default supportSettings
 
 const styles = StyleSheet.create({
     container:{
