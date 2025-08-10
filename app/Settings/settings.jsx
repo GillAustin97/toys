@@ -4,9 +4,6 @@ import { StyleSheet, Text, View } from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
-//links for setting pages
-import generalSettings from './accountSettings'
-
 const settings = () => {
   return (
      <View style={styles.container}>
