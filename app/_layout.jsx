@@ -18,7 +18,15 @@ const _layout = () => {
       <Stack.Screen name="toys" options={{title: 'Toys'}} />
       <Stack.Screen name="feedback" options={{title: 'Feedback'}} />
       <Stack.Screen name="camera" options={{title: 'Camera'}} />
-      <Stack.Screen name="settings" options={{title: 'Settings'}} />
+
+
+      <Stack.Screen name="aboutSettings" options={{title: 'About'}} />
+      <Stack.Screen name="accountSettings" options={{title: 'Account'}} />
+      <Stack.Screen name="buyingSettings" options={{title: 'Buying'}} />
+      <Stack.Screen name="sellingSettings" options={{title: 'Selling'}} />
+      <Stack.Screen name="preferencesSettings" options={{title: 'Preferences'}} />
+      <Stack.Screen name="notificationsSettings" options={{title: 'Notifications'}} />
+      <Stack.Screen name="supportSettings" options={{title: 'Support'}} />
     
     </Stack>
   )
