@@ -23,6 +23,8 @@ const index = () => {
         <Link href="/stores"  style={styles.button}>Stores</Link>
         <Link href="/camera"  style={styles.button}>Camera</Link>
         <Link href="/feedback"style={styles.button}>Feedback</Link>
+        <Link href="/settings"style={styles.button}>Settings</Link>
+
 
     </View>
   )
