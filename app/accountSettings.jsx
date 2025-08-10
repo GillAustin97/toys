@@ -2,7 +2,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 
 //link for to attach to different screens
-import {Link} from 'expo-router'
+import {Link, router} from 'expo-router'
 
 const accountSettings = () => {
   return (
