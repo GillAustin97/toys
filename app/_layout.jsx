@@ -26,7 +26,8 @@ const _layout = () => {
       <Stack.Screen name="preferencesSettings" options={{title: 'Preferences'}} />
       <Stack.Screen name="notificationsSettings" options={{title: 'Notifications'}} />
       <Stack.Screen name="supportSettings" options={{title: 'Support'}} />
-    
+      <Stack.Screen name="settings" options={{title: 'Settings'}} />
+      
     </Stack>
   )
 }
