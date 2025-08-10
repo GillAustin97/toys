@@ -6,9 +6,15 @@ import {Link} from 'expo-router'
 
 const settings = () => {
   return (
-    <View style={styles.container}>
+     <View style={styles.container}>
+
       <Text>Settings</Text>
+
     </View>
+
+
+
+
   )
 }
 
