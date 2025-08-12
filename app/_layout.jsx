@@ -17,11 +17,13 @@ const _layout = () => {
       <Stack.Screen name="onboarding2" options={{title: '', headerShown: false}} />
       <Stack.Screen name="onboarding3" options={{title: '', headerShown: false}} />
 
-      <Stack.Screen name="loginORcreateAccount" options={{title: 'Login or Create Account', headerShown: false}} />
+      <Stack.Screen name="loginORcreateAccount" options={{title: '', headerShown: true}} />
 
       <Stack.Screen name="mainOptions" options={{title: '', headerShown: false}} />
 
-      <Stack.Screen name="user_login" options={{title: 'Login', headerShown: false}} />
+      <Stack.Screen name="user_login" options={{title: '', headerShown: true}} />
+
+      <Stack.Screen name="user_CreateAccount" options={{title: '', headerShown: true}} />
 
       <Stack.Screen name="stores" options={{title: 'Stores'}} />
       <Stack.Screen name="toys" options={{title: 'Toys'}} />

@@ -17,6 +17,8 @@ const user_login = () => {
         <TextInput placeholder='Username' style={styles.title} />
         <TextInput placeholder='Password' secureTextEntry={true} style={styles.title} />
 
+        <Link href="/mainOptions"   style={styles.button}>Login</Link>
+
     </View>
   )
 }
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor:'#ffff',
+        backgroundColor:'#8C9867',
         height: '100%',
         width: '100%',
     },

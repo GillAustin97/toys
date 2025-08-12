@@ -54,6 +54,8 @@ const styles = StyleSheet.create({
         textShadowColor: '#000',
         textShadowOffset: { width: 0, height: 0 },
         textShadowRadius: 0,
+        marginTop: 10,
+        marginBottom: 5,
     },
     logo:{
         width: 200,

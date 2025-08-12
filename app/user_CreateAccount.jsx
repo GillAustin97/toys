@@ -15,7 +15,7 @@ const user_CreateAccount = () => {
         <Image source={mainLogo} style={styles.logo} />
 
         {/*Welcome Message*/}
-        <Text style={styles.welcome}>Welcome, Please create a account.</Text>   
+        <Text style={styles.welcome}>Welcome, Please create an account.</Text>   
 
         <TextInput placeholder='Firstname' style={styles.title} />
         <TextInput placeholder='Lastname' style={styles.title} />
@@ -23,7 +23,7 @@ const user_CreateAccount = () => {
         <TextInput placeholder='Create Email' style={styles.title} />
         <TextInput placeholder='Create Password' secureTextEntry={true} style={styles.title} />
 
-        <Link href="/mainOptions"   style={styles.button}>Create</Link>
+        <Link href="/mainOptions"   style={styles.button}>Sign in</Link>
 
     </View>
   )

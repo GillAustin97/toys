@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor:'#ffff',
+        backgroundColor:'#8C9867',
     },
     button:{
         backgroundColor: '#3A5F0B',
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'Black',
         textShadowColor: '#000',
-        textShadowOffset: { width: 1, height: 1 },
-        textShadowRadius: 2,
+        textShadowOffset: { width: 0, height: 0 },
+        textShadowRadius: 0,
     },
     logo:{
         width: 200,
