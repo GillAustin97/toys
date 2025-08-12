@@ -11,7 +11,7 @@ const onboarding1 = () => {
   return (
     <View style={styles.container}>
 
-        {/*Main Screen logo */}
+        {/*Buy logo */}
         <Image source={buyLogo} style={styles.logo} />
 
         {/*Main Screen title */}
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor:'#ffff',
+        backgroundColor:'#8C9867',
     },
     button:{
         backgroundColor: '#3A5F0B',

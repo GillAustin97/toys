@@ -15,7 +15,7 @@ const loginORcreateAccount = () => {
         <Image source={mainLogo} style={styles.logo} />
 
         {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
-        <Link href=""   style={styles.button}>Login</Link>
+        <Link href="user_login"   style={styles.button}>Login</Link>
 
         {/*Create a Account */}
         <Text style={styles.title}>or</Text>
