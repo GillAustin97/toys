@@ -7,7 +7,7 @@ import {Link} from 'expo-router'
 //importing main logo image for the main screen
 import mainLogo from '../assets/logo_toy.png'
 
-const index = () => {
+const mainOptions = () => {
   return (
     <View style={styles.container}>
 
@@ -15,16 +15,21 @@ const index = () => {
         <Image source={mainLogo} style={styles.logo} />
 
         {/*Main Screen title */}
-        <Text style={styles.title}>Welcome!</Text>
+        <Text style={styles.title}>RareToys</Text>
 
         {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
-        <Link href="/onboarding1"   style={styles.button}>Next</Link>
+        <Link href="/toys"    style={styles.button}>Toys</Link>
+        <Link href="/stores"  style={styles.button}>Stores</Link>
+        <Link href="/camera"  style={styles.button}>Camera</Link>
+        <Link href="/feedback"style={styles.button}>Feedback</Link>
+        <Link href="/settings"style={styles.button}>Settings</Link>
+
 
     </View>
   )
 }
 
-export default index
+export default mainOptions
 
 const styles = StyleSheet.create({
     container:{

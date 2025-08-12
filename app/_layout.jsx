@@ -11,14 +11,21 @@ const _layout = () => {
 
     }}>
 
-      <Stack.Screen name="index" options={{title: 'Home', headerShown: false}} />
-      <Stack.Screen name="login" options={{title: 'Login'}} />
+      <Stack.Screen name="index" options={{title: '', headerShown: false}} />
+      <Stack.Screen name="onboarding1" options={{title: '', headerShown: false}} />
+      <Stack.Screen name="onboarding2" options={{title: '', headerShown: false}} />
+      <Stack.Screen name="onboarding3" options={{title: '', headerShown: false}} />
+
+      <Stack.Screen name="mainOptions" options={{title: '', headerShown: false}} />
+
+
+      <Stack.Screen name="loginORcreateAccount" options={{title: 'Login or Create Account', headerShown: false}} />
       <Stack.Screen name="stores" options={{title: 'Stores'}} />
       <Stack.Screen name="toys" options={{title: 'Toys'}} />
       <Stack.Screen name="feedback" options={{title: 'Feedback'}} />
       <Stack.Screen name="camera" options={{title: 'Camera'}} />
 
-
+      <Stack.Screen name="settings" options={{title: 'Settings'}} />
       <Stack.Screen name="aboutSettings" options={{title: 'About'}} />
       <Stack.Screen name="accountSettings" options={{title: 'Account'}} />
       <Stack.Screen name="buyingSettings" options={{title: 'Buying'}} />
@@ -26,7 +33,10 @@ const _layout = () => {
       <Stack.Screen name="preferencesSettings" options={{title: 'Preferences'}} />
       <Stack.Screen name="notificationsSettings" options={{title: 'Notifications'}} />
       <Stack.Screen name="supportSettings" options={{title: 'Support'}} />
-      <Stack.Screen name="settings" options={{title: 'Settings'}} />
+      
+
+
+      
       
     </Stack>
   )

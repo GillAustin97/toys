@@ -1,18 +1,30 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image} from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
-const login = () => {
+//importing buy image for the main screen
+import tradeLogo from '../assets/buySellTrade/tradeImage.png';
+
+const onboarding3 = () => {
   return (
     <View style={styles.container}>
-      <Text>login</Text>
+
+        {/*Main Screen logo */}
+        <Image source={tradeLogo} style={styles.logo} />
+
+        {/*Main Screen title */}
+        <Text style={styles.title}>Trade</Text>
+
+        {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
+        <Link href="/loginORcreateAccount"   style={styles.button}>Next</Link>
+
     </View>
   )
 }
 
-export default login
+export default onboarding3
 
 const styles = StyleSheet.create({
     container:{
@@ -35,6 +47,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'Black',
         textShadowColor: '#000',
+        textShadowOffset: { width: 1, height: 1 },
+        textShadowRadius: 2,
     },
     logo:{
         width: 200,

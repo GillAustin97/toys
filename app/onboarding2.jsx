@@ -4,27 +4,27 @@ import { StyleSheet, Text, View, Image} from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
-//importing main logo image for the main screen
-import mainLogo from '../assets/logo_toy.png'
+//importing buy image for the main screen
+import sellLogo from '../assets/buySellTrade/sellingImage.png';
 
-const index = () => {
+const onboarding2 = () => {
   return (
     <View style={styles.container}>
 
         {/*Main Screen logo */}
-        <Image source={mainLogo} style={styles.logo} />
+        <Image source={sellLogo} style={styles.logo} />
 
         {/*Main Screen title */}
-        <Text style={styles.title}>Welcome!</Text>
+        <Text style={styles.title}>Sell</Text>
 
         {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
-        <Link href="/onboarding1"   style={styles.button}>Next</Link>
+        <Link href="/onboarding3"   style={styles.button}>Next</Link>
 
     </View>
   )
 }
 
-export default index
+export default onboarding2
 
 const styles = StyleSheet.create({
     container:{
