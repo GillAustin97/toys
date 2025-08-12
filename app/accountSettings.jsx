@@ -8,8 +8,10 @@ const accountSettings = () => {
   return (
      <View style={styles.container}>
 
-      <Text>Settings</Text>
-
+        
+        <Link href="/loginORcreateAccount"style={styles.button}>Log out</Link>
+    
+    
     </View>
   )
 }
