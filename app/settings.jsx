@@ -16,6 +16,8 @@ const settings = () => {
       <Link href="/preferencesSettings"style={styles.button}>Preferences</Link>
       <Link href="/supportSettings"style={styles.button}>Support</Link>
 
+      <Link href="/loginORcreateAccount"style={styles.button}>Log out</Link>
+
     </View>
   )
 }

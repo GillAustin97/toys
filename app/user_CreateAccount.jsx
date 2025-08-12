@@ -7,21 +7,29 @@ import {Link} from 'expo-router'
 //importing buy image for the main screen
 import mainLogo from '../assets/logo_toy.png';
 
-const user_login = () => {
+const user_CreateAccount = () => {
   return (
     <View style={styles.container}>
 
         {/*Main Screen logo */}
         <Image source={mainLogo} style={styles.logo} />
 
-        <TextInput placeholder='Username' style={styles.title} />
-        <TextInput placeholder='Password' secureTextEntry={true} style={styles.title} />
+        {/*Welcome Message*/}
+        <Text style={styles.welcome}>Welcome, Please create a account.</Text>   
+
+        <TextInput placeholder='Firstname' style={styles.title} />
+        <TextInput placeholder='Lastname' style={styles.title} />
+        <TextInput placeholder='Create Username' style={styles.title} />
+        <TextInput placeholder='Create Email' style={styles.title} />
+        <TextInput placeholder='Create Password' secureTextEntry={true} style={styles.title} />
+
+        <Link href="/mainOptions"   style={styles.button}>Create</Link>
 
     </View>
   )
 }
 
-export default user_login
+export default user_CreateAccount
 
 const styles = StyleSheet.create({
     container:{
@@ -54,6 +62,15 @@ const styles = StyleSheet.create({
         height: 40,
         width: '80%',
         marginBottom: 20,
+    },
+    welcome:{
+        fontSize: 20,
+        fontWeight: '',
+        color: 'Black',
+        textShadowColor: '#000',
+        textShadowOffset: { width: 0, height: 0 },
+        textShadowRadius: 0,
+        marginBottom: 10,
     },
     logo:{
         width: 200,

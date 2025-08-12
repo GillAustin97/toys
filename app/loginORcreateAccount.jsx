@@ -21,7 +21,7 @@ const loginORcreateAccount = () => {
         <Text style={styles.title}>or</Text>
 
         {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
-        <Link href=""   style={styles.button}>Create Account</Link>
+        <Link href="user_CreateAccount"   style={styles.button}>Create Account</Link>
 
     </View>
   )
