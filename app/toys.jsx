@@ -1,8 +1,11 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity} from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
+
+//importing web browser for external internet use
+import * as WebBrowser from 'expo-web-browser';
 
 const toys = () => {
   return (
