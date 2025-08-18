@@ -10,7 +10,10 @@ import * as WebBrowser from 'expo-web-browser';
 const toys = () => {
   return (
     <View style={styles.container}>
-      <Text>toys</Text>
+     
+
+    <View style={styles.bottomBar} />
+
     </View>
   )
 }
@@ -45,5 +48,20 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         borderColor: 'black',
         borderWidth: 2,
+    },
+    bottomBar:{
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: 60,
+        backgroundColor: '#616161ff',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        borderTopLeftRadius: 0,
+        borderTopRightRadius: 0,
+        borderColor: 'black',
+        borderWidth: 1,
     },
 })
