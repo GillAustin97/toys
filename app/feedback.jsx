@@ -1,5 +1,5 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Alert, TextInput } from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
@@ -11,11 +11,19 @@ const feedback = () => {
   const storeRate = async () => {
     if (await StoreReview.hasAction()) {
       await StoreReview.requestReview()
+      Alert.alert('Thanks for feedback!');
 }
+    else {
+      Alert.alert('Store Review', 'Store review is not available on this device.');
+    }
   }
   return (
     <View style={styles.container}>
       <Text>Love the app? Leave a Review</Text>
+
+      <TextInput style ={styles.feedbackBox} 
+      placeholder="Enter your feedback here" multiline={true} numberOfLines={4} />
+
       <TouchableOpacity style={styles.button} onPress={storeRate}>
         <Text style={styles.Text}>Rate us</Text>
       </TouchableOpacity>
@@ -54,5 +62,13 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         borderColor: 'black',
         borderWidth: 2,
+    },
+    feedbackBox: {
+        width: '80%',
+        height: 100,
+        borderColor: 'gray',
+        borderWidth: 1,
+        padding: 10,
+        marginTop: 20,
     },
 })
