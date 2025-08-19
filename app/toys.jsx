@@ -1,5 +1,5 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View, TouchableOpacity} from 'react-native'
+import { StyleSheet, Text, View, Pressable, Image, Linking} from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
@@ -7,14 +7,29 @@ import {Link} from 'expo-router'
 //importing web browser for external internet use
 import * as WebBrowser from 'expo-web-browser';
 
-const toys = () => {
-  return (
-    <View style={styles.container}>
-     
+//importing scrolling view for screen
+import { ScrollView } from 'react-native';
 
-    <View style={styles.bottomBar} />
+//importing images for the toy screen
+import lordOfRingsToy1 from '../assets/toyImages/lordOfRingsImage1.png';
+
+const toys = () => {
+
+  const lordOfRings1 = () => {
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')
+  };
+
+  return (
+
+    <ScrollView>
+    <View style={styles.container}>
+
+      <Pressable style={styles.button} onPress={lordOfRings1}>
+        <Image source={lordOfRingsToy1} style={styles.logo} />
+      </Pressable>
 
     </View>
+    </ScrollView>
   )
 }
 
@@ -26,26 +41,37 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor:'#ffff',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        paddingHorizontal: 5,
+        justifyContent: 'space-between',
     },
     button:{
-        backgroundColor: '#3A5F0B',
+        backgroundColor: '#ffffffff',
         paddingVertical: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 10,
         borderRadius: 5,
-        marginTop: 20,
-        borderColor: 'black',
-        borderWidth: 2,
+        marginTop: 10,
+        flexWrap: 'wrap',
+        width: '30%',
+        alignItems: 'center',
+    },
+    buttonText:{
+      color: 'black',
+      fontWeight: '',
     },
     title:{
         fontSize: 40,
         fontWeight: 'bold',
         color: 'Black',
+        textShadowColor: '#000',
     },
     logo:{
-        width: 200,
-        height: 200,
-        marginBottom: 20,
+        width: 100,
+        height: 100,
         borderRadius: 25,
+        marginTop: 5,
+        marginBottom: 2,
         borderColor: 'black',
         borderWidth: 2,
     },
