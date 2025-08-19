@@ -87,6 +87,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor:'#ffff',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        paddingHorizontal: 5,
+        justifyContent: 'space-between',
     },
     button:{
         backgroundColor: '#ffffffff',
@@ -95,6 +99,8 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginTop: 10,
         flexWrap: 'wrap',
+        width: '30%',
+        alignItems: 'center',
     },
     buttonText:{
       color: 'white',
@@ -109,7 +115,6 @@ const styles = StyleSheet.create({
     logo:{
         width: 100,
         height: 100,
-        marginBottom: 20,
         borderRadius: 25,
         marginTop: 5,
         marginBottom: 2,
