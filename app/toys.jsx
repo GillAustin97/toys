@@ -12,12 +12,96 @@ import { ScrollView } from 'react-native';
 
 //importing images for the toy screen
 import lordOfRingsToy1 from '../assets/toyImages/lordOfRingsImage1.png';
+import falloutToy1 from '../assets/toyImages/falloutImage1.png';
+import starwarsToy1 from '../assets/toyImages/starwarsImage1.png';
 
+import lordOfRingsToy2 from '../assets/toyImages/lordOfRingsImage1.png';
+import falloutToy2 from '../assets/toyImages/falloutImage1.png';
+import starwarsToy2 from '../assets/toyImages/starwarsImage1.png';
+
+import lordOfRingsToy3 from '../assets/toyImages/lordOfRingsImage1.png';
+import falloutToy3 from '../assets/toyImages/falloutImage1.png';
+import starwarsToy3 from '../assets/toyImages/starwarsImage1.png';
+
+import lordOfRingsToy4 from '../assets/toyImages/lordOfRingsImage1.png';
+import falloutToy4 from '../assets/toyImages/falloutImage1.png';
+import starwarsToy4 from '../assets/toyImages/starwarsImage1.png';
+
+import lordOfRingsToy5 from '../assets/toyImages/lordOfRingsImage1.png';
+import falloutToy5 from '../assets/toyImages/falloutImage1.png';
+import starwarsToy5 from '../assets/toyImages/starwarsImage1.png';
+
+import lordOfRingsToy6 from '../assets/toyImages/lordOfRingsImage1.png';
+import falloutToy6 from '../assets/toyImages/falloutImage1.png';
+import starwarsToy6 from '../assets/toyImages/starwarsImage1.png';
+
+import lordOfRingsToy7 from '../assets/toyImages/lordOfRingsImage1.png';
+import falloutToy7 from '../assets/toyImages/falloutImage1.png';
+import starwarsToy7 from '../assets/toyImages/starwarsImage1.png';
 const toys = () => {
 
   const lordOfRings1 = () => {
-    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')
-  };
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')};
+
+  const fallout1 = () => {
+    Linking.openURL('https://funko.com/pop-vault-boy/87075.html')};
+
+  const starwars1 = () => {
+    Linking.openURL('https://funko.com/pop-deluxe-lights-and-sounds-ig-12-with-grogu/81872.html')};
+
+  const lordOfRings2 = () => {
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')};
+
+  const fallout2 = () => {
+    Linking.openURL('https://funko.com/pop-vault-boy/87075.html')};
+
+  const starwars2 = () => {
+    Linking.openURL('https://funko.com/pop-deluxe-lights-and-sounds-ig-12-with-grogu/81872.html')};
+
+  const lordOfRings3 = () => {
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')};
+
+  const fallout3 = () => {
+    Linking.openURL('https://funko.com/pop-vault-boy/87075.html')};
+
+  const starwars3 = () => {
+    Linking.openURL('https://funko.com/pop-deluxe-lights-and-sounds-ig-12-with-grogu/81872.html')};
+
+  const lordOfRings4 = () => {
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')};
+
+  const fallout4 = () => {
+    Linking.openURL('https://funko.com/pop-vault-boy/87075.html')};
+
+  const starwars4 = () => {
+    Linking.openURL('https://funko.com/pop-deluxe-lights-and-sounds-ig-12-with-grogu/81872.html')};
+
+  const lordOfRings5 = () => {
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')};
+
+  const fallout5 = () => {
+    Linking.openURL('https://funko.com/pop-vault-boy/87075.html')};
+
+  const starwars5 = () => {
+    Linking.openURL('https://funko.com/pop-deluxe-lights-and-sounds-ig-12-with-grogu/81872.html')};
+
+    const lordOfRings6 = () => {
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')};
+
+  const fallout6 = () => {
+    Linking.openURL('https://funko.com/pop-vault-boy/87075.html')};
+
+  const starwars6 = () => {
+    Linking.openURL('https://funko.com/pop-deluxe-lights-and-sounds-ig-12-with-grogu/81872.html')};
+
+    const lordOfRings7 = () => {
+    Linking.openURL('https://funko.com/pop-plus-frodo-baggins-glow/86430.html')};
+
+  const fallout7 = () => {
+    Linking.openURL('https://funko.com/pop-vault-boy/87075.html')};
+
+  const starwars7 = () => {
+    Linking.openURL('https://funko.com/pop-deluxe-lights-and-sounds-ig-12-with-grogu/81872.html')};
 
   return (
     <View style={styles.screenFiller}>
@@ -27,6 +111,86 @@ const toys = () => {
 
           <Pressable style={styles.button} onPress={lordOfRings1}>
             <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={fallout1}>
+            <Image source={falloutToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={starwars1}>
+            <Image source={starwarsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={lordOfRings2}>
+            <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={fallout2}>
+            <Image source={falloutToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={starwars2}>
+            <Image source={starwarsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={lordOfRings3}>
+            <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={fallout3}>
+            <Image source={falloutToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={starwars3}>
+            <Image source={starwarsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={lordOfRings4}>
+            <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={fallout4}>
+            <Image source={falloutToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={starwars4}>
+            <Image source={starwarsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={lordOfRings5}>
+            <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={fallout5}>
+            <Image source={falloutToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={starwars5}>
+            <Image source={starwarsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={lordOfRings6}>
+            <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={fallout6}>
+            <Image source={falloutToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={starwars6}>
+            <Image source={starwarsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={lordOfRings7}>
+            <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={fallout7}>
+            <Image source={falloutToy1} style={styles.logo} />
+          </Pressable>
+
+          <Pressable style={styles.button} onPress={starwars7}>
+            <Image source={starwarsToy1} style={styles.logo} />
           </Pressable>
 
         </View>
@@ -55,7 +219,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffffff',
         paddingVertical: 10,
         paddingHorizontal: 10,
-        borderRadius: 5,
+        borderRadius: 1,
         marginTop: 10,
         flexWrap: 'wrap',
         width: '30%',
@@ -74,7 +238,7 @@ const styles = StyleSheet.create({
     logo:{
         width: 100,
         height: 100,
-        borderRadius: 25,
+        borderRadius: 0,
         marginTop: 5,
         marginBottom: 2,
         borderColor: 'black',
