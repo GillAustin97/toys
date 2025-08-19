@@ -14,6 +14,7 @@ import walmartLogo from '../assets/storeLogos/logo_walmart.png';
 import mercariLogo from '../assets/storeLogos/logo_mercari.png';
 import legoLogo from '../assets/storeLogos/logo_lego.png';
 import ebayLogo from '../assets/storeLogos/logo_ebay.png';
+import fbMarketplaceLogo from '../assets/storeLogos/logo_facebookMarketplace.png';
 
 
 const stores = () => {
@@ -36,47 +37,41 @@ const stores = () => {
   const ebaySite = () => {
     Linking.openURL('https://www.ebay.com')
   };
-
+  const fbMarketplaceSite = () => {
+    Linking.openURL('https://www.facebook.com/marketplace')
+  };
 
   return (
 
     <ScrollView>
     <View style={styles.container}>
 
-      <Image source={funkoLogo} style={styles.logo} />
-
       <Pressable style={styles.button} onPress={funkoSite}>
-        <Text style={styles.buttonText}>Funko</Text>
+        <Image source={funkoLogo} style={styles.logo} />
       </Pressable>
-
-      <Image source={targetLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={targetSite}>
-        <Text style={styles.buttonText}>Target</Text>
+        <Image source={targetLogo} style={styles.logo} />
       </Pressable>
-
-      <Image source={walmartLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={walmartSite}>
-        <Text style={styles.buttonText}>Walmart</Text>
+        <Image source={walmartLogo} style={styles.logo} />
       </Pressable>
-
-      <Image source={mercariLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={mercariSite}>
-        <Text style={styles.buttonText}>Mercari</Text>
+        <Image source={mercariLogo} style={styles.logo} />
       </Pressable>
-
-      <Image source={legoLogo} style={styles.logo} />
 
       <Pressable style={styles.button} onPress={legoSite}>
-        <Text style={styles.buttonText}>Lego</Text>
+        <Image source={legoLogo} style={styles.logo} />
       </Pressable>
 
-      <Image source={ebayLogo} style={styles.logo} />
-
       <Pressable style={styles.button} onPress={ebaySite}>
-        <Text style={styles.buttonText}>Ebay</Text>
+        <Image source={ebayLogo} style={styles.logo} />
+      </Pressable>
+
+      <Pressable style={styles.button} onPress={fbMarketplaceSite}>
+        <Image source={fbMarketplaceLogo} style={styles.logo} />
       </Pressable>
 
     </View>
@@ -94,11 +89,11 @@ const styles = StyleSheet.create({
         backgroundColor:'#ffff',
     },
     button:{
-        backgroundColor: '#3A5F0B',
+        backgroundColor: '#ffffffff',
         paddingVertical: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 10,
         borderRadius: 5,
-        marginTop: 20,
+        marginTop: 10,
         flexWrap: 'wrap',
     },
     buttonText:{
