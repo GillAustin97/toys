@@ -20,9 +20,8 @@ const toys = () => {
   };
 
   return (
-    <View>
+    <View style={styles.screenFiller}>
 
-      
       <ScrollView>
         <View style={styles.container}>
 
@@ -32,7 +31,6 @@ const toys = () => {
 
         </View>
       </ScrollView>
-
 
       <View style={styles.bottomBar}></View>
 
@@ -96,5 +94,8 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 0,
         borderColor: 'black',
         borderWidth: 1,
+    },
+    screenFiller: {
+        flex: 1,
     },
 })
