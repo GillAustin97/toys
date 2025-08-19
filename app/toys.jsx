@@ -20,16 +20,23 @@ const toys = () => {
   };
 
   return (
+    <View>
 
-    <ScrollView>
-    <View style={styles.container}>
+      
+      <ScrollView>
+        <View style={styles.container}>
 
-      <Pressable style={styles.button} onPress={lordOfRings1}>
-        <Image source={lordOfRingsToy1} style={styles.logo} />
-      </Pressable>
+          <Pressable style={styles.button} onPress={lordOfRings1}>
+            <Image source={lordOfRingsToy1} style={styles.logo} />
+          </Pressable>
+
+        </View>
+      </ScrollView>
+
+
+      <View style={styles.bottomBar}></View>
 
     </View>
-    </ScrollView>
   )
 }
 
