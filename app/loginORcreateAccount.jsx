@@ -23,6 +23,9 @@ const loginORcreateAccount = () => {
         {/*Links for each page that is created, basically a button to go to that page will be displayed on this screen. */}
         <Link href="user_CreateAccount"   style={styles.button}>Create Account</Link>
 
+        {/* link to forgot password page */}
+        <Link href= "forgotPassword"><Text style={styles.linktext}>Forgot Password?</Text></Link>
+
     </View>
   )
 }
@@ -44,6 +47,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
         borderRadius: 5,
         marginTop: 20,
+        marginBottom: 10,
         borderColor: 'black',
         borderWidth: 2
     },
@@ -65,4 +69,12 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         borderWidth: 2,
     },
+    linktext:{
+        color: 'black',
+        fontSize: 14,
+        underlineColor: 'black',
+        textDecorationLine: 'underline',
+        marginTop: 50,
+        
+    }
 })
