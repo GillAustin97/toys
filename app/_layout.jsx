@@ -39,7 +39,7 @@ const _layout = () => {
       <Stack.Screen name="notificationsSettings" options={{title: 'Notifications'}} />
       <Stack.Screen name="supportSettings" options={{title: 'Support'}} />
       
-
+      <Stack.Screen name="forgotPassword" options={{title: 'Forgot Password'}} />
 
       
       
