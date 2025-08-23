@@ -1,16 +1,24 @@
-import { StyleSheet, Text, View, TextInput, Alert} from 'react-native'
+import { StyleSheet, Text, View, TextInput, Alert, TouchableOpacity} from 'react-native'
 
 import React from 'react'
 
 const forgotPassword = () => {
+
+    const resetPassword = () => {
+        Alert.alert('Password reset link ahs been sent to your email.');
+    }
+
   return (
     <View styles={styles.container}>
 
         <Text style={styles.welcome}>Enter your email to receive a password reset link.</Text>
 
         <TextInput placeholder='Email' style={styles.title} />
-     
-        <Text style={styles.button}>Send Link</Text>
+
+        <TouchableOpacity onPress={resetPassword}>
+            <Text style={styles.button}>Send Link</Text>
+        </TouchableOpacity>
+
     </View>
   )
 }
