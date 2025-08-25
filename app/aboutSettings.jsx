@@ -1,13 +1,22 @@
 //this is the main point of the application where you add all components to this page
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
+//importing austins image
+import austinImage from '../assets/aboutAustin.png'
+
 const aboutSettings = () => {
   return (
     <View style={styles.container}>
-      <Text></Text>
+
+              {/*Main Screen logo */}
+              <Image source={austinImage} style={styles.logo} />
+      
+              {/*Main Screen title */}
+              <Text style={styles.title}>Austin Gill</Text>
+      
     </View>
   )
 }
