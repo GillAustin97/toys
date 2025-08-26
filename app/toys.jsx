@@ -4,9 +4,6 @@ import { StyleSheet, Text, View, Pressable, Image, Linking} from 'react-native'
 //link for to attach to different screens
 import {Link} from 'expo-router'
 
-//importing web browser for external internet use
-import * as WebBrowser from 'expo-web-browser';
-
 //importing scrolling view for screen
 import { ScrollView } from 'react-native';
 
@@ -272,7 +269,14 @@ const toys = () => {
         </View>
       </ScrollView>
 
-      <View style={styles.bottomBar}></View>
+      <View style={styles.bottomBar}>
+
+        <Pressable style={styles.browserButton} 
+        onPress={() => Linking.openURL('https://www.google.com')}>
+          <Text style={styles.buttonText}>Browser</Text>
+        </Pressable>
+
+      </View>
 
     </View>
   )
@@ -290,6 +294,17 @@ const styles = StyleSheet.create({
         flexWrap: 'wrap',
         paddingHorizontal: 5,
         justifyContent: 'space-between',
+    },
+    browserButton:{
+        backgroundColor: '#ffffffff',
+        paddingVertical: 10,
+        paddingHorizontal: 10,
+        borderRadius: 1,
+        marginTop: 10,
+        flexWrap: 'wrap',
+        width: '40%',
+        alignItems: 'center',
+        borderRadius: 5,
     },
     button:{
         backgroundColor: '#ffffffff',
