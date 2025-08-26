@@ -5,7 +5,7 @@ import React from 'react'
 const forgotPassword = () => {
 
     const resetPassword = () => {
-        Alert.alert('Password reset link ahs been sent to your email.');
+        Alert.alert('Password Link Sent');
     }
 
   return (
