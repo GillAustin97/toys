@@ -15,8 +15,16 @@ const aboutSettings = () => {
               <Image source={austinImage} style={styles.logo} />
       
               {/*Main Screen title */}
-              <Text style={styles.title}>Austin Gill</Text>
-      
+              <Text style={styles.name}>Austin Gill</Text>
+
+              <Text style={styles.title}>Software Developer</Text>
+              <Text style={styles.title}>Full Sail University Student</Text>
+            
+            <Text style={styles.name}>About Me:</Text>
+            <Text style={styles.title}>I am a software developer with a passion for creating innovative solutions.
+            I enjoy learning new technologies and improving my skills. In my free time, I like to play video games, 
+            atch movies, and spend time with my friends and family.</Text>
+
     </View>
   )
 }
@@ -39,14 +47,21 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         borderWidth: 2,
     },
-    title:{
-        fontSize: 40,
-        fontWeight: 'bold',
+    name:{
+        fontSize: 20,
         color: 'Black',
+        marginBottom: 10,
+        fontWeight: 'bold',
+    },
+    title:{
+        fontSize: 20,
+        color: 'Black',
+        marginBottom: 10,
+        textAlign: 'center',
     },
     logo:{
-        width: 200,
-        height: 200,
+        width: 150,
+        height: 150,
         marginBottom: 20,
         borderRadius: 25,
         borderColor: 'black',

@@ -23,7 +23,8 @@ const mainOptions = () => {
         <Link href="/camera"  style={styles.button}>Camera</Link>
         <Link href="/feedback"style={styles.button}>Feedback</Link>
         <Link href="/settings"style={styles.button}>Settings</Link>
-
+        <Link href="/donate"    style={styles.button}>Donate</Link>
+        
         {/*bottom bar for navigation*/}
         <View style={styles.bottomBar} />
 
