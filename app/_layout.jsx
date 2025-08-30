@@ -42,6 +42,8 @@ const _layout = () => {
       <Stack.Screen name="forgotPassword" options={{title: 'Forgot Password'}} />
 
       <Stack.Screen name="donate" options={{title: 'Donate'}} />
+
+      <Stack.Screen name="addFunds" options={{title: 'Rewards'}} />
       
       
     </Stack>
