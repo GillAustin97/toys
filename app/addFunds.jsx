@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, Alert } from 'react-native'
 
 import { Link } from 'expo-router'
 
@@ -10,6 +10,7 @@ import * as StoreReview from 'expo-store-review';
 const addFunds = () => {
 
   const funds = async () => {
+
     if (await StoreReview.hasAction()) {
       await StoreReview.requestReview()
       Alert.alert('Funds have been added!');
@@ -32,6 +33,7 @@ const addFunds = () => {
       <TouchableOpacity style={styles.button} onPress={funds}>
         <Text style={styles.Text}>Add Funds</Text>
       </TouchableOpacity>
+
     </View>
   )
 }

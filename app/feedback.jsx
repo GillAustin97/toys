@@ -8,6 +8,7 @@ import {Link} from 'expo-router'
 import * as StoreReview from 'expo-store-review';
 
 const feedback = () => {
+  
   const storeRate = async () => {
     if (await StoreReview.hasAction()) {
       await StoreReview.requestReview()
