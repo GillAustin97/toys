@@ -22,6 +22,8 @@ const addFunds = () => {
   return (
     <View style={styles.container}>
 
+    <Text style={styles.feedbackBox}> Current Amount: $14.89</Text>  
+
     <Image source={appleQRcode} style={styles.logo} />
 
       <Text>Add Funds</Text>
@@ -32,6 +34,24 @@ const addFunds = () => {
 
       <TouchableOpacity style={styles.button} onPress={funds}>
         <Text style={styles.Text}>Add Funds</Text>
+      </TouchableOpacity>
+
+      <Text style = {styles.smalltext}>or</Text>
+
+      <TouchableOpacity style={styles.button} onPress={funds}>
+        <Text style={styles.Text}>$10</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={funds}>
+        <Text style={styles.Text}>$15</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={funds}>
+        <Text style={styles.Text}>$20</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={funds}>
+        <Text style={styles.Text}>$25</Text>
       </TouchableOpacity>
 
     </View>
@@ -76,5 +96,11 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
         marginTop: 20,
+        marginBottom: 10,
+    },
+    smalltext:{
+        fontSize: 20,
+        marginTop: 15,
+        marginBottom: 10,
     },
 })
