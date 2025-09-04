@@ -68,8 +68,6 @@ Copy code
 
 ---
 
-### **Section 6 – Screenshots**
-```markdown
 ## 📸 Screenshots
 <p align="center">
   <img src="/assets/logo_toy.png" width="120" alt="App Logo"/>
